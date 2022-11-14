@@ -12,12 +12,12 @@ public class App {
                 (HelloWorld) applicationContext.getBean("helloworld");
         System.out.println(bean.getMessage());
 
-        Cat beanCat1 = (Cat) applicationContext.getBean("cat");
-        System.out.println(beanCat1.getMessage());
+        Cat beanCat = (Cat) applicationContext.getBean("cat");
+        System.out.println(beanCat.getMessage());
         Cat beanCat2 = (Cat) applicationContext.getBean("cat");
         System.out.println(beanCat2.getMessage());
 
         System.out.println(bean==bean2);
-        System.out.println(beanCat1==beanCat2);
+        System.out.println(beanCat==beanCat2);
     }
 }
